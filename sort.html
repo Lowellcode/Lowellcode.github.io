@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+<body>
+<center><h1>배열하기</h1></center>
+<script>
+var a = prompt("숫자 여러개 입력~");
+alert("입력값은:" + a);
+document.write(a + "<br>");
+val = a.split(' ')
+document.write(val + "<br>");
+document.write("배열 길이:" + val.length + "<br>");
+data = val.map(Number)
+for ( gamma = 0; gamma<(data.length-1); gamma++){
+for ( alpha = 0; alpha<(data.length-1); alpha++) { 
+    if ( data[alpha] > data[alpha+1]) {
+        beta = data[alpha]; data[alpha] = data[alpha+1]; data[alpha+1] = beta;
+        }
+    }
+}
+document.write(gamma + "번째 정렬 후:" + data + "<br>");
+document.write("최종 정렬 후:" + data);
+</script>
+</body>
+</html>
